@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/fonts/Lato-Regular.ttf');
+  src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+ font-family: "Lato";
+}
+
+.container-fluid {
+	width: 100%;  /* largura maxima do container */
+  margin: 0 auto; /* retira margens e centraliza horizontalmente o elemento na tela */
+}
+
+.container {
+	width: 1280px;  /* largura maxima do container */
+	margin: 0 auto; /* retira margens e centraliza horizontalmente o elemento na tela */
+  padding: 2% 1%;  /* cima e baixo com 0, esquerda e direita com 2% */
+}
+
+header {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,7db9e8+80 */
+  background: rgb(30,87,153); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(32,124,202,1) 0%, rgba(125,185,232,1) 80%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(125,185,232,1) 80%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(125,185,232,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* Navbar */
+.navbar-brand img {
+	width: 100px; 
+	height: 40px; 
+}
+
+.nav-item a {
+	font-size: 20px;
+}
+
+#arrow-left {
+  margin-left: 10px;
+}
+
+#comprar:hover #arrow-copy, #comprar:active #arrow-copy {
+  stroke: #212529;
+}
+
+
+/* Section Cards */
+.bg-secondary {
+  background-color: rgba(108, 117, 125, 0.2)!important;
+}
+
+.card h3 {
+  font-weight: 900;
+}
+
+.card svg {
+  padding: 1px 0px;
+}
+
+.cards-shadow {
+  -webkit-box-shadow: 0 15px 10px -6px #777;
+     -moz-box-shadow: 0 15px 10px -6px #777;
+          box-shadow: 0 15px 10px -6px #777;
+}
+
+.cards-hover {
+  transition: .5s ease;
+}
+
+.cards-hover:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .5s ease;
+}
+
+.cards-hover:hover .card-title {
+  color: #007bff;
+}
+
+.cards-hover:hover .btn-outline-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.cards-hover:hover #Group-2-Copy, .cards-hover:hover #Group-2-Copy path, .cards-hover:hover #Group-2-Copy ellipse{
+  stroke: white;
+  fill: white;
+}
+
+.cards-hover:hover {
+  border: 2px solid #007bff;
+}
+
+
+/* Formulario */
+
+.border-md {
+  border-width: 2px;
+}
+
+.form-control:not(select) {
+  padding: 1.5rem 0.5rem;
+}
+
+select.form-control {
+  height: 52px;
+  padding-left: 0.5rem;
+}
+
+.form-control::placeholder {
+  color: #ccc;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+.currency {
+  font-size: 2rem;
+  position: relative;
+  font-weight: 400;
+  top: -35px;
+}
+
+.card .list-group-item {
+  border: 0px;
+  padding: 0.25rem;
+  color: #808080;
+  font-weight: 300;
+}
+
+.carousel img {
+  width: 980px;
+  height: 200px;
+}
+
+.carousel-caption {
+	top: 20%;
+	bottom: 20%;
+}
+
+
+/* Inputs */
+.input-group input {
+  padding-left: 60px;
+  font-size: 20px;
+}
+
+.input-group input:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.input__nome {
+  background-image: url("/assets/images/user.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-position: 15px;
+}
+.input__email {
+  background-image: url("/assets/images/email.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-position: 15px;
+}
+.input__telefone {
+  background-image: url("/assets/images/phone.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-position: 15px;
+}
+
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  font-size: 20px;
+}
+
