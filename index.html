@@ -16,59 +16,62 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Olá, mundo!</title>
+    <title>Owli Teste</title>
 </head>
 
 <body>
     <header>
-        <nav class="container-fluid navbar navbar-expand-lg navbar-dark" id="mainNavbar">
-            <div class="container">
-                <a href="/" class="navbar-brand text-center mr-0"><img src="./assets/images/Owli.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse justify-content-center" id="navbarSite">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#">Início <span class="sr-only">(Página
-                                    atual)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Recursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Planos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Blog</a>
-                        </li>
-                    </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+                        <a href="/" class="navbar-brand text-center mr-0"><img src="./assets/images/Owli.svg" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-center" id="navbarSite">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link text-white" href="#">Início <span class="sr-only">(Página
+                                                atual)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Recursos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Planos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Blog</a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                                <ul class="navbar-nav ml-auto align-items-center">
+                                    <li class="nav-item"><a class="nav-link text-white" href="">Entrar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="">
+                                            <button type="button" class="btn btn-outline-light px-3" id="comprar">Comprar
+                                                <!-- <img src="./assets/images/arrow-left-right-small.svg" alt="" class="px-2"> -->
+                                                <svg id="arrow-left" width="7px" height="11px" viewBox="0 0 7 11" version="1.1"
+                                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <g id="arrow-left-right-small" stroke="none" stroke-width="1" fill="none"
+                                                        fill-rule="evenodd">
+                                                        <polyline id="arrow-copy" stroke="#FFFFFF" fill-rule="nonzero"
+                                                            points="1 1 6 5.5 1 10"></polyline>
+                                                    </g>
+                                                </svg>
+                                            </button></a></li>
+                                </ul>
+                        </div>
+                    </nav>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav ml-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link text-white" href="">Entrar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">
-                                <button type="button" class="btn btn-outline-light px-3" id="comprar">Comprar
-                                    <!-- <img src="./assets/images/arrow-left-right-small.svg" alt="" class="px-2"> -->
-                                    <svg id="arrow-left" width="7px" height="11px" viewBox="0 0 7 11" version="1.1"
-                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <g id="arrow-left-right-small" stroke="none" stroke-width="1" fill="none"
-                                            fill-rule="evenodd">
-                                            <polyline id="arrow-copy" stroke="#FFFFFF" fill-rule="nonzero"
-                                                points="1 1 6 5.5 1 10"></polyline>
-                                        </g>
-                                    </svg>
-                                </button></a></li>
-                    </ul>
-                </div>
-
             </div>
-        </nav>
+        </div>
 
-        <div class="container-fluid">
-            <div class="container row align-items-center">
+        <div class="container">
+            <div class="row d-flex align-items-center py-5">
                 <!-- Texto e Botão -->
-                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 pr-lg-5 mb-5 mb-md-0">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 my-5 mx-3">
                     <h1 class="text-white display-4">A nova área do cliente.</h1>
                     <h3 class="text-white">Aplicativo para locatários e proprietários de imóveis</h3>
                     <button type="button" class="btn btn-light btn-lg mt-3 font-weight-bold">Quero fazer parte
@@ -85,53 +88,51 @@
                         </svg>
                     </button>
                 </div>
-
-                <!-- Form Registro -->
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ml-auto mr-2 bg-white px-4 py-5 rounded">
+                
+                <!-- Formulario -->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ml-auto mr-md-5 mx-xs-5 bg-white px-4 py-5 rounded">
                     <form action="#">
-                        <div class="row">
-                            <h2 class="col-lg-12 mb-5 text-center font-weight-bold">Cadastre sua imobiliária</h2>
-
-                            <!-- Nome -->
-                            <div class="container input-group mb-4 px-3">
-                                <input type="text" placeholder="Nome"
-                                    class="input__nome form-control bg-white border-md">
-                            </div>
-
-                            <!-- Email -->
-                            <div class="container input-group mb-4 px-3">
-                                <input type="email" placeholder="E-mail"
-                                    class="input__email form-control bg-white border-md">
-                            </div>
-
-                            <!-- Telefone -->
-                            <div class="container input-group mb-4 px-3">
-                                <input type="tel" placeholder="Telefone"
-                                    class="input__telefone form-control bg-white border-md">
-                            </div>
-
-
-                            <!-- Submit Button -->
-                            <div class="form-group col-lg-12 mx-auto mb-0">
-                                <a href="#" class="btn btn-primary btn-block py-2">
-                                    <span class="font-weight-bold">Enviar</span>
-                                </a>
-                            </div>
+                        <h3 class="mb-5 text-center font-weight-bold">Cadastre sua imobiliária</h3>
+    
+                        <!-- Nome -->
+                        <div class="input-group mb-4 px-3">
+                            <input type="text" placeholder="Nome"
+                                class="input__nome form-control bg-white border-md">
+                        </div>
+    
+                        <!-- Email -->
+                        <div class="input-group mb-4 px-3">
+                            <input type="email" placeholder="E-mail"
+                                class="input__email form-control bg-white border-md">
+                        </div>
+    
+                        <!-- Telefone -->
+                        <div class="input-group mb-4 px-3">
+                            <input type="tel" placeholder="Telefone"
+                                class="input__telefone form-control bg-white border-md">
+                        </div>
+    
+    
+                        <!-- Submit Button -->
+                        <div class="form-group col-lg-12 mx-auto mb-0">
+                            <a href="#" class="btn btn-primary btn-block py-2">
+                                <span class="font-weight-bold">Enviar</span>
+                            </a>
                         </div>
                     </form>
                 </div>
-            </div>
+            </div><!-- row -->
         </div>
     </header>
 
 
 
-    <section class="container-fluid">
-        <div class="row container d-flex justify-content-between align-items-center mb-5">
+    <section class="container">
+        <div class="row d-flex justify-content-between align-items-center mb-5">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4">
-                <div class="card border-0" style="width: 30rem;">
-                    <div class="card-body d-flex flex-rap">
-                        <h2 class="card-title display-4">Conheça todos os nossos recursos</h2>
+                <div class="card border-0">
+                    <div class="card-body">
+                        <h2 class="card-title display-5 text-center">Conheça todos os nossos recursos</h2>
                     </div>
                 </div>
             </div>
@@ -243,6 +244,7 @@
                 </div>
             </div>
 
+            <!-- 
             <div class="container" style="width: 980px; max-height: 200px;">
                 <div class="carousel slide" id="main-carousel" data-ride="carousel">
                     <div class="carousel-inner">
@@ -267,7 +269,7 @@
                                 <a href="#" class="btn btn-primary py-2"><span>Voltar para o topo</span></a>
                             </div>
                         </div>
-                    </div><!-- /.carousel-inner -->
+                    </div>
 
                     <a href="#main-carousel" class="carousel-control-prev" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
@@ -277,8 +279,10 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only" aria-hidden="true">Next</span>
                     </a>
-                </div><!-- /.carousel -->
+                </div>
             </div>
+            -->
+
         </div>
     </section>
 
