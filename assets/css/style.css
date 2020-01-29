@@ -190,3 +190,31 @@ select.form-control {
   font-size: 20px;
 }
 
+@media (max-width: 575.98px) {
+  #section-4 {
+    margin-top: 150px;
+  }
+
+  #card-1, #card-2 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .currency {
+    top: 0px;
+    font-size: 20px;
+  }
+
+  .preco {
+    justify-content: center;
+  }
+
+  #card-1 {
+    margin-bottom: 130px;
+  }
+
+  #section-recursos .card-title {
+    margin-top: 16px;
+    font-weight: 900;
+  }
+}
