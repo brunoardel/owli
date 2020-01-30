@@ -143,13 +143,17 @@ select.form-control {
 }
 
 .carousel img {
-  width: 980px;
-  height: 200px;
+  max-height: 200px;
+  width: 100%;
 }
 
 .carousel-caption {
-	top: 20%;
-	bottom: 20%;
+  top: 20%;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
 }
 
 
@@ -216,5 +220,10 @@ select.form-control {
   #section-recursos .card-title {
     margin-top: 16px;
     font-weight: 900;
+  }
+
+  .carousel-caption {
+    top: 0;
+    bottom: 0;
   }
 }
