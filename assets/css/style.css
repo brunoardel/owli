@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'Lato';
-  src: url('/assets/fonts/Lato-Regular.ttf');
-  src: url('/assets/fonts/Lato-Regular.ttf') format('truetype');
+  src: url('../fonts/Lato-Regular.ttf');
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 * {
- font-family: "Lato";
+  font-family: 'Lato';
 }
 
 .container-fluid {
-	width: 100%;  /* largura maxima do container */
+  width: 100%; /* largura maxima do container */
   margin: 0 auto; /* retira margens e centraliza horizontalmente o elemento na tela */
 }
 
@@ -21,35 +21,50 @@
 
 header {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+0,7db9e8+80 */
-  background: rgb(30,87,153); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(32,124,202,1) 0%, rgba(125,185,232,1) 80%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(125,185,232,1) 80%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(32,124,202,1) 0%,rgba(125,185,232,1) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: rgb(30, 87, 153); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(32, 124, 202, 1) 0%,
+    rgba(125, 185, 232, 1) 80%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(32, 124, 202, 1) 0%,
+    rgba(125, 185, 232, 1) 80%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(32, 124, 202, 1) 0%,
+    rgba(125, 185, 232, 1) 80%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 /* Navbar */
 .navbar-brand img {
-	width: 100px; 
-	height: 40px; 
+  width: 100px;
+  height: 40px;
 }
 
 .nav-item a {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 #arrow-left {
   margin-left: 10px;
 }
 
-#comprar:hover #arrow-copy, #comprar:active #arrow-copy {
+#comprar:hover #arrow-copy,
+#comprar:active #arrow-copy {
   stroke: #212529;
 }
 
-
 /* Section Cards */
 .bg-secondary {
-  background-color: rgba(108, 117, 125, 0.2)!important;
+  background-color: rgba(108, 117, 125, 0.2) !important;
 }
 
 .card h3 {
@@ -62,19 +77,19 @@ header {
 
 .cards-shadow {
   -webkit-box-shadow: 0 15px 10px -6px #777;
-     -moz-box-shadow: 0 15px 10px -6px #777;
-          box-shadow: 0 15px 10px -6px #777;
+  -moz-box-shadow: 0 15px 10px -6px #777;
+  box-shadow: 0 15px 10px -6px #777;
 }
 
 .cards-hover {
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .cards-hover:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .cards-hover:hover .card-title {
@@ -87,7 +102,9 @@ header {
   border-color: #007bff;
 }
 
-.cards-hover:hover #Group-2-Copy, .cards-hover:hover #Group-2-Copy path, .cards-hover:hover #Group-2-Copy ellipse{
+.cards-hover:hover #Group-2-Copy,
+.cards-hover:hover #Group-2-Copy path,
+.cards-hover:hover #Group-2-Copy ellipse {
   stroke: white;
   fill: white;
 }
@@ -95,7 +112,6 @@ header {
 .cards-hover:hover {
   border: 2px solid #007bff;
 }
-
 
 /* Formulario */
 
@@ -156,7 +172,6 @@ select.form-control {
   justify-self: center;
 }
 
-
 /* Inputs */
 .input-group input {
   padding-left: 60px;
@@ -169,28 +184,29 @@ select.form-control {
 }
 
 .input__nome {
-  background-image: url("/assets/images/user.svg");
+  background-image: url('../images/user.svg');
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   background-position: 15px;
 }
 .input__email {
-  background-image: url("/assets/images/email.svg");
+  background-image: url('../images/email.svg');
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   background-position: 15px;
 }
 .input__telefone {
-  background-image: url("/assets/images/phone.svg");
+  background-image: url('../images/phone.svg');
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
   background-position: 15px;
 }
 
-.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.form-control::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
   font-size: 20px;
 }
 
@@ -199,7 +215,8 @@ select.form-control {
     margin-top: 150px;
   }
 
-  #card-1, #card-2 {
+  #card-1,
+  #card-2 {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
